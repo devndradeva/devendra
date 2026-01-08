@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Saptha Associates | Financial & Loan Consultancy</title>
+
+<meta name="description"
+content="Saptha Associates provides professional assistance for home loans, business loans, personal loans and loan against property in Bengaluru.">
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --primary:#1e3a8a;
+    --accent:#0ea5a4;
+    --bg:#f7f9fc;
+    --card:#ffffff;
+    --text:#1f2937;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.65;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(135deg,#1e3a8a,#2563eb);
+    color:#fff;
+    padding:95px 20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:3rem;
+    font-weight:700;
+}
+
+header p{
+    margin-top:12px;
+    font-size:1.2rem;
+    opacity:.95;
+}
+
+header a{
+    margin-top:32px;
+    display:inline-block;
+    background:#fff;
+    color:var(--primary);
+    padding:14px 36px;
+    border-radius:30px;
+    font-weight:600;
+    text-decoration:none;
+}
+
+header a:hover{
+    background:#eef2ff;
+}
+
+/* SECTION */
+section{
+    max-width:1200px;
+    margin:75px auto;
+    padding:0 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title h2{
+    font-size:2.35rem;
+    color:var(--primary);
+}
+
+/* CARD */
+.card{
+    background:var(--card);
+    padding:38px;
+    border-radius:16px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    border-left:6px solid var(--accent);
+}
+
+/* SERVICES */
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:28px;
+}
+
+.service{
+    text-align:center;
+}
+
+.service i{
+    font-size:42px;
+    color:var(--accent);
+    margin-bottom:18px;
+}
+
+.service h3{
+    font-size:1.25rem;
+    margin-bottom:8px;
+}
+
+/* FORM */
+form{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+form input,
+form select,
+form textarea{
+    padding:14px;
+    border-radius:10px;
+    border:1px solid #d1d5db;
+    font-size:1rem;
+}
+
+form textarea{
+    grid-column:1/3;
+}
+
+form button{
+    grid-column:1/3;
+    background:var(--primary);
+    color:#fff;
+    padding:16px;
+    border:none;
+    border-radius:30px;
+    font-size:1.1rem;
+    font-weight:600;
+    cursor:pointer;
+}
+
+form button:hover{
+    background:#162f6a;
+}
+
+/* CONTACT */
+.contact p{
+    margin:12px 0;
+}
+
+.contact i{
+    color:var(--accent);
+    margin-right:10px;
+}
+
+/* FOOTER */
+footer{
+    background:#0f172a;
+    color:#fff;
+    text-align:center;
+    padding:28px;
+}
+
+/* FLOATING BUTTONS */
+.floating-btn{
+    position:fixed;
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:22px;
+    box-shadow:0 6px 15px rgba(0,0,0,.3);
+    z-index:999;
+}
+
+/* Order: Call → Email → WhatsApp */
+.call-btn{
+    background:var(--primary);
+    right:20px;
+    bottom:160px;
+}
+
+.email-btn{
+    background:#ea4335;
+    right:20px;
+    bottom:95px;
+}
+
+.whatsapp-btn{
+    background:#25D366;
+    right:20px;
+    bottom:30px;
+}
+
+@media(max-width:600px){
+    header h1{font-size:2.2rem;}
+    form{grid-template-columns:1fr;}
+    form textarea,
+    form button{grid-column:1;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Saptha Associates</h1>
+    <p>Professional Financial & Loan Consultancy</p>
+    <a href="#enquiry">Request Consultation</a>
+</header>
+
+<section>
+<div class="section-title">
+    <h2>About Us</h2>
+</div>
+
+<div class="card">
+    <p>
+        Saptha Associates is a financial services consultancy providing structured
+        assistance for housing finance, business funding, personal finance, and
+        secured lending solutions. We support customers throughout the loan
+        application process by offering eligibility assessment, documentation
+        coordination, and procedural guidance.
+    </p>
+
+    <p style="margin-top:15px;">
+        Our operations are driven by transparency, accuracy, and compliance with
+        established financial practices, ensuring a reliable and streamlined
+        experience for individuals and businesses seeking financial solutions.
+    </p>
+</div>
+</section>
+
+<section>
+<div class="section-title">
+    <h2>Our Services</h2>
+</div>
+
+<div class="services">
+    <div class="card service">
+        <i class="fa-solid fa-house"></i>
+        <h3>Home Loans</h3>
+        <p>Assistance for housing finance through partner institutions.</p>
+    </div>
+
+    <div class="card service">
+        <i class="fa-solid fa-building-columns"></i>
+        <h3>Loan Against Property</h3>
+        <p>Secured lending solutions against residential or commercial property.</p>
+    </div>
+
+    <div class="card service">
+        <i class="fa-solid fa-briefcase"></i>
+        <h3>Business Loans</h3>
+        <p>Support for working capital and business funding requirements.</p>
+    </div>
+
+    <div class="card service">
+        <i class="fa-solid fa-user"></i>
+        <h3>Personal Loans</h3>
+        <p>Unsecured loan assistance based on eligibility criteria.</p>
+    </div>
+</div>
+</section>
+
+<section id="enquiry">
+<div class="section-title">
+    <h2>Enquiry Form</h2>
+</div>
+
+<div class="card">
+<form action="https://formspree.io/f/xnjnepbb" method="POST">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="tel" name="phone" placeholder="Mobile Number" required>
+    <input type="email" name="email" placeholder="Email Address">
+    <select name="loan_type" required>
+        <option value="">Select Loan Type</option>
+        <option>Home Loan</option>
+        <option>Loan Against Property</option>
+        <option>Business Loan</option>
+        <option>Personal Loan</option>
+    </select>
+    <textarea name="message" placeholder="Your Requirement"></textarea>
+    <button type="submit">Submit Enquiry</button>
+</form>
+</div>
+</section>
+
+<section>
+<div class="section-title">
+    <h2>Contact Us</h2>
+</div>
+
+<div class="card contact">
+    <p><strong>SM:</strong> M Devendra Reddy</p>
+
+    <p>
+        <i class="fa-solid fa-location-dot"></i>
+        SK Raju Building, Shop No.1, 1st Floor,<br>
+        4th Cross, Vijaya Bank Colony,<br>
+        Krishna Nagar Main Road,<br>
+        K.R. Puram, Bengaluru – 560036
+    </p>
+
+    <p>
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:sapthaaassociates@gmail.com">
+            sapthaaassociates@gmail.com
+        </a>
+    </p>
+
+    <p>
+        <i class="fa-brands fa-whatsapp"></i>
+        <a href="https://wa.me/917899661083" target="_blank">
+            +91 7899661083
+        </a>
+    </p>
+
+    <iframe
+        src="https://www.google.com/maps?q=13.008842,77.707149&z=18&output=embed"
+        width="100%"
+        height="280"
+        style="border:0;border-radius:12px;margin-top:22px;"
+        loading="lazy">
+    </iframe>
+</div>
+</section>
+
+<!-- DISCLAIMER -->
+<section>
+<div class="card" style="font-size:0.95rem;color:#374151;">
+<strong>Disclaimer:</strong>
+<p style="margin-top:10px;">
+Saptha Associates is a financial services consultancy. We do not provide loans
+directly and are not a bank or a non-banking financial company (NBFC). Loan
+sanction, interest rates, tenure, fees, and terms are subject to the policies
+and approval of the respective banks or financial institutions.
+</p>
+<p style="margin-top:10px;">
+Information provided on this website is for general guidance only and should
+not be considered as a financial offer or commitment.
+</p>
+</div>
+</section>
+
+<footer>
+    <p>© 2026 Saptha Associates. All Rights Reserved.</p>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<a href="tel:+917899661083" class="floating-btn call-btn">
+    <i class="fa-solid fa-phone"></i>
+</a>
+
+<a href="mailto:sapthaaassociates@gmail.com" class="floating-btn email-btn">
+    <i class="fa-solid fa-envelope"></i>
+</a>
+
+<a href="https://wa.me/917899661083" class="floating-btn whatsapp-btn">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
